@@ -2,4 +2,4 @@ This Diet Recommendation system will provide your diet for three different timin
 
 Iam going to use HTML,CSS and Java Script for making website and python for including machine learning model.
 
-this project is incomplete and in process.
+This project is incomplete and in process.
