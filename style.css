@@ -1,65 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgb(232, 251, 92);
+:root {
+    --body-color: #DDF7E3;
+    --nav-color: #6ea86a;
+    --text-color: #DF2E38;
+    --light-color: #C7E8CA;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+main {
+    width: 96vw;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--nav-color);
+    font-size: 25px;
+    font-weight: bolder;
     border: 2px solid black;
-    margin: 25px auto auto;
-    max-width: 90vw;
-    border-radius: 30px;
-    position: sticky;
-    justify-content: space-between;
-    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: 96vw;
+    margin: auto;
+    margin-top: 20px;
 }
 
-nav .logo img{
-    width: 140px;
-    height: auto;
+.navbar-brand {
+    font-size: 30px;
+    color: var(--text-color);
+    /* i want a text shadow with yellow glow */
+    text-shadow: 0 0 10px yellow;
 }
 
-nav .middle{
-    padding-left: 100px
-}
-
-nav .middle h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-style: italic;
-    font-weight:bolder;
-    color: red;
-    
-}
-
-nav .right ul{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 25px;
-    gap: 25px;
-}
-
-nav .right ul li{
-    list-style-type: none;
-    text-align: center;
-}
-
-nav .right ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 35px;
+nav-item {
     font-weight: bold;
-    text-transform: capitalize;
-    /* border: 2px solid green;
-    padding: 5px;
-    border-radius: 15px; */
+    font-size: 25px;
 }
 
-nav .right ul li a:hover{
-    color: red;
+
+a:hover {
     text-decoration: underline;
+}
+
+.carouselExampleCaptions {
+    margin-top: 20px;
+    width: 100vw;
+}
+
+main .container1 {
+    margin: 20px auto;
+    width: 96vw;
+    padding: 10px;
+
 }
