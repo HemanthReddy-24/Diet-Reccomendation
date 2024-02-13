@@ -21,6 +21,7 @@ main {
     padding: 10px;
 }
 
+
 nav {
     background-color: var(--nav-color);
     font-size: 25px;
@@ -60,3 +61,20 @@ main .container1 {
     padding: 10px;
 
 }
+
+.offcanvas {
+    width: 90vw !important;
+    height: 90vh !important;
+    margin: 5vh 5vw;
+    background-color: var(--body-color);
+  }
+
+  #read-more-blogs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+  }
