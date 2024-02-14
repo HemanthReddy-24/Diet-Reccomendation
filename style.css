@@ -78,3 +78,13 @@ main .container1 {
     
 
   }
+
+  .back-top{
+    position: fixed;
+    bottom: 20px; /* Adjust distance from bottom */
+    right: 20px; /* Adjust distance from right */
+    z-index: 99; /* Ensure button stays above other elements */
+    cursor: pointer;
+  }
+
+  
