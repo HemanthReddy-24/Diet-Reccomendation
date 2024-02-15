@@ -86,5 +86,16 @@ main .container1 {
     z-index: 99; /* Ensure button stays above other elements */
     cursor: pointer;
   }
+.lead{
+    text-align: justify;
+}
 
-  
+.blog-right-img{
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.blog-left-img{
+    margin-left: 60px;
+    margin-top: 40px;
+}
