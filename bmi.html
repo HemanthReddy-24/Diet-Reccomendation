@@ -55,7 +55,30 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <img src="bmi-1.jpg" alt="BMI image" class="bmi-1">
+        <div id="bmi-calculator">
+            <div id="calculator">
+                <h1>BMI Calculator</h1>
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" min="1">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" min="1">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" min="1">
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <div id="result"></div>
+            </div>
+        </div>
+        <div id="read-more-blogs">
+            <a href="/blog.html"><button type="button" class="btn btn-primary btn-lg">Read Our BMI Blog</button></a>
+        </div>
+    </main>
     <footer>
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
