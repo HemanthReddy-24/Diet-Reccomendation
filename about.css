@@ -130,18 +130,18 @@
 }
 
 /* Our Team */
-#our-Team {
+.our-Team {
     width: 80%;
     margin: 4rem auto 1rem;
 }
 
-#our-Team h2 {
+.our-Team h2 {
     text-align: center;
     margin: 1rem auto 4rem;
     position: relative;
 }
 
-#our-Team h2::after {
+.our-Team h2::after {
     content: '';
     height: 4px;
     margin: 0 auto;

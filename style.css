@@ -144,3 +144,80 @@ main .container1 {
 .m-30{
     margin-bottom: 30px;
 }
+
+.our-services{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.our-services .card {
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid var(--text-color);
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+  .our-services .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+  .our-services .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+  .our-services .text-body {
+    color: black;
+    text-align: justify;
+   }
+   
+   /*Text*/
+ .our-services  .text-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: underline 2px solid var(--nav-color);
+    text-underline-offset: 5px;
+    text-transform: uppercase;
+    font-style: italic;
+   }
+   
+   /*Hover*/
+ .our-services  .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+  .our-services .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+   .our-services .card:hover .card-button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+   }
