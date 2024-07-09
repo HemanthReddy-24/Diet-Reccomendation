@@ -62,7 +62,7 @@
         </nav>
     </header>
     <main>
-        <img src="bmi-1.jpg" alt="BMI image" class="bmi-1">
+        <img src="static\images\bmi-1.jpg" alt="BMI image" class="bmi-1">
         <div id="bmi-calculator">
             <div id="calculator">
                 <h1>BMI Calculator</h1>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div id="read-more-blogs">
-            <a href="blog.html"><button type="button" class="btn btn-primary btn-lg">Read Our BMI Blog</button></a>
+            <a href="{{ url_for('blog') }}"><button type="button" class="btn btn-primary btn-lg">Read Our BMI Blog</button></a>
         </div>
     </main>
     <footer>
@@ -101,7 +101,7 @@
             <p class="text-center text-body-secondary">© 2024 made with ❤️ for KARE</p>
         </footer>
     </footer>
-    <script src="bmi.js"></script>
+    <script src="static\js\bmi.js"></script>
 </body>
 
 </html>
