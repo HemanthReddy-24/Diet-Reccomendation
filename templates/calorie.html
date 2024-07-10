@@ -10,6 +10,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="/templates/style.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='calorie.css') }}">
 </head>
 
 <body>
@@ -62,7 +63,36 @@
         </nav>
     </header>
     <main>
-        
+        <h1>Calorie Calculator</h1>
+        <div class="calorie">
+            <form method="post">
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" name="age" required>
+                </div>
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height (in meters)</label>
+                    <input type="number" step="0.01" class="form-control" id="height" name="height" required>
+                </div>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Weight (in kg)</label>
+                    <input type="number" class="form-control" id="weight" name="weight" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
+            {% if prediction is not none %}
+            <div class="mt-4">
+                <h2>Calories to Maintain Weight: {{ prediction }}</h2>
+            </div>
+            {% endif %}
+        </div>
     </main>
     <footer>
         <footer class="py-3 my-4">
@@ -87,7 +117,7 @@
             <p class="text-center text-body-secondary">© 2024 made with ❤️ for KARE</p>
         </footer>
     </footer>
-    <script src="static\js\calorie.js"></script>
+    <!-- <script src="{{ url_for('static', filename='js/calorie.js') }}"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
