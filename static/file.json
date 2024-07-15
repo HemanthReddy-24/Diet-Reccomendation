@@ -1,0 +1,714 @@
+[
+    {
+        "Food_items": "Asparagus Cooked",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 22
+    },
+    {
+        "Food_items": "Avocados",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 160
+    },
+    {
+        "Food_items": "Bananas",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 89
+    },
+    {
+        "Food_items": "Bagels made in wheat",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 250
+    },
+    {
+        "Food_items": "Berries",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 349
+    },
+    {
+        "Food_items": "Brocolli",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 25
+    },
+    {
+        "Food_items": "Brown Rice",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 362
+    },
+    {
+        "Food_items": "Cauliflower",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 32
+    },
+    {
+        "Food_items": "American cheese",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 331
+    },
+    {
+        "Food_items": "Coffee",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 2
+    },
+    {
+        "Food_items": "Corn",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 97
+    },
+    {
+        "Food_items": "Dark chocolates",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 556
+    },
+    {
+        "Food_items": "Grapes",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 93
+    },
+    {
+        "Food_items": "Milk",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 97
+    },
+    {
+        "Food_items": "Cashew Nuts",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 553
+    },
+    {
+        "Food_items": "Onions",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 40
+    },
+    {
+        "Food_items": "Orange",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 97
+    },
+    {
+        "Food_items": "Pasta canned with tomato sauce",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 71
+    },
+    {
+        "Food_items": "Pears",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 57
+    },
+    {
+        "Food_items": "Peas",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 81
+    },
+    {
+        "Food_items": "Protein Powder",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 411
+    },
+    {
+        "Food_items": "Pumpkin",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 18
+    },
+    {
+        "Food_items": "Tuna Salad",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 187
+    },
+    {
+        "Food_items": "Tuna Fish",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 184
+    },
+    {
+        "Food_items": "Peproni Pizza",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 298
+    },
+    {
+        "Food_items": "Cheese Pizza",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 276
+    },
+    {
+        "Food_items": "French Fries",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 289
+    },
+    {
+        "Food_items": "Chicken Burger",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 292
+    },
+    {
+        "Food_items": "Cheese Burger",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 256
+    },
+    {
+        "Food_items": "Chicken Sandwich",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 257
+    },
+    {
+        "Food_items": "Sugar Doughnuts",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 426
+    },
+    {
+        "Food_items": "Chocolate Doughnuts",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 452
+    },
+    {
+        "Food_items": "Pop Corn - Caramel",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 381
+    },
+    {
+        "Food_items": "Pop Corn",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 429
+    },
+    {
+        "Food_items": "Dosa",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 168
+    },
+    {
+        "Food_items": "Idli",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 156
+    },
+    {
+        "Food_items": "Poha",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 130
+    },
+    {
+        "Food_items": "Chappati",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 297
+    },
+    {
+        "Food_items": "Tomato",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 16
+    },
+    {
+        "Food_items": "Yogurt",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 60
+    },
+    {
+        "Food_items": "Brownie",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 407
+    },
+    {
+        "Food_items": "Noodles",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 108
+    },
+    {
+        "Food_items": "Uttapam",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 188
+    },
+    {
+        "Food_items": "Bhaji Pav",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 151
+    },
+    {
+        "Food_items": "Dal Makhani",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 109
+    },
+    {
+        "Food_items": "Almonds",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 579
+    },
+    {
+        "Food_items": "Mushrooms",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 22
+    },
+    {
+        "Food_items": "Egg Yolk cooked",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "1",
+        "Calories": 196
+    },
+    {
+        "Food_items": "Sweet Potatoes cooked",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 76
+    },
+    {
+        "Food_items": "Boiled Potatoes",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 87
+    },
+    {
+        "Food_items": "White Rice",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 360
+    },
+    {
+        "Food_items": "Orange juice",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 45
+    },
+    {
+        "Food_items": "Greek yogurt plain",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 73
+    },
+    {
+        "Food_items": "Oat Bran Cooked",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 40
+    },
+    {
+        "Food_items": "Green Tea",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 1
+    },
+    {
+        "Food_items": "Chia seeds",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 486
+    },
+    {
+        "Food_items": "Cottage cheese with vegetables",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 95
+    },
+    {
+        "Food_items": "Salmon",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 127
+    },
+    {
+        "Food_items": "Cereals-Corn Flakes",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 384
+    },
+    {
+        "Food_items": "Beans",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 31
+    },
+    {
+        "Food_items": "Lentils",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 101
+    },
+    {
+        "Food_items": "Pasta with corn homemade",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 126
+    },
+    {
+        "Food_items": "Tea",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 1
+    },
+    {
+        "Food_items": "Apples",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 52
+    },
+    {
+        "Food_items": "Strawberries",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 32
+    },
+    {
+        "Food_items": "Quninoa",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 120
+    },
+    {
+        "Food_items": "Goat meat",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 109
+    },
+    {
+        "Food_items": "Rabbit meat",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 114
+    },
+    {
+        "Food_items": "Chicken Strips",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 295
+    },
+    {
+        "Food_items": "Steak Fries",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 255
+    },
+    {
+        "Food_items": "Mexican Rice",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 195
+    },
+    {
+        "Food_items": "Fried Shrimp",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 319
+    },
+    {
+        "Food_items": "Spaghetti and meatballs",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 170
+    },
+    {
+        "Food_items": "Macroni n Cheese ",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 194
+    },
+    {
+        "Food_items": "Pork cooked",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 297
+    },
+    {
+        "Food_items": "Bacon cooked",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 146
+    },
+    {
+        "Food_items": "Nachos",
+        "Breakfast": 1,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 350
+    },
+    {
+        "Food_items": "Chicken Popcorn",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 351
+    },
+    {
+        "Food_items": "Turkey cooked",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 203
+    },
+    {
+        "Food_items": "Oyster cooked",
+        "Breakfast": 0,
+        "Lunch": 1,
+        "Dinner": 1,
+        "VegNovVeg": "1",
+        "Calories": 159
+    },
+    {
+        "Food_items": "Beef sticks",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "1",
+        "Calories": 550
+    },
+    {
+        "Food_items": "Banana Chips",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 519
+    },
+    {
+        "Food_items": "Honey",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 304
+    },
+    {
+        "Food_items": "Chocolate Icecream",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 216
+    },
+    {
+        "Food_items": "Vanilla Ice cream",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 207
+    },
+    {
+        "Food_items": "Strawberry Icecream",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 192
+    },
+    {
+        "Food_items": "Marshmallows",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 318
+    },
+    {
+        "Food_items": "Chocolate milk",
+        "Breakfast": 1,
+        "Lunch": 0,
+        "Dinner": 0,
+        "VegNovVeg": "0",
+        "Calories": 535
+    },
+    {
+        "Food_items": "Rice Pudding",
+        "Breakfast": 0,
+        "Lunch": 0,
+        "Dinner": 1,
+        "VegNovVeg": "0",
+        "Calories": 376
+    }
+]

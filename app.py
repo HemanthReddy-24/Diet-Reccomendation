@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import joblib
 import numpy as np
+import json
 
 app = Flask(__name__)
 
@@ -44,9 +45,30 @@ def calorie():
 def contact():
     return render_template('contact.html')
 
-@app.route('/diet')
+@app.route('/diet', methods=['GET', 'POST'])
 def diet():
-    return render_template('diet.html')
+    if request.method == 'POST':
+        if 'json_file' in request.files:
+            json_file = request.files['json_file']
+            data = json.load(json_file)
+            age = data['age']
+            height = data['height']
+            weight = data['weight']
+            gender = data['gender']
+        else:
+            age = int(request.form['age'])
+            height = float(request.form['height'])
+            weight = float(request.form['weight'])
+            gender = int(request.form['gender'])
+        
+        # Prepare the input data
+        input_data = np.array([[age, height, weight, gender]])
+        
+        # Make the prediction
+        prediction = model.predict(input_data)[0]
+        
+        return render_template('diet.html', prediction=prediction)
+    return render_template('diet.html', prediction=None)
 
 if __name__ == '__main__':
     app.run(debug=True)

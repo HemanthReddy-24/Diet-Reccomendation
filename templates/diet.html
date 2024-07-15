@@ -1,93 +1,981 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Diet Recommendation- A perfect Diet planner for you</title>
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar  navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url_for('index') }}">Diet Recommendation</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link  fw-semibold " aria-current="page" href="{{ url_for('index') }}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold " href="{{ url_for('about') }}">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold " href="{{ url_for('blog') }}">Blogs</a>
-                        </li>
-                        <li class="nav-item dropdown fw-semibold">
-                            <a class="nav-link dropdown-toggle active text-decoration-underline fw-bold" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Diet Recommender
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ url_for('bmi') }}">BMI Calculator</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="{{ url_for('diet') }}">Diet Recommender</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="{{ url_for('calorie') }}">Calorie Calculator</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold " href="{{ url_for('contact') }}">Contact-us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{ url_for('index') }}"
+            >Diet Recommendation</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold"
+                  aria-current="page"
+                  href="{{ url_for('index') }}"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="{{ url_for('about') }}"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="{{ url_for('blog') }}"
+                  >Blogs</a
+                >
+              </li>
+              <li class="nav-item dropdown fw-semibold">
+                <a
+                  class="nav-link dropdown-toggle active text-decoration-underline fw-bold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Diet Recommender
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="{{ url_for('bmi') }}"
+                      >BMI Calculator</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{{ url_for('diet') }}"
+                      >Diet Recommender</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{{ url_for('calorie') }}"
+                      >Calorie Calculator</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="{{ url_for('contact') }}"
+                  >Contact-us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="back-top">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                    class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-                </svg></a>
+      <div class="container">
+        <h2 class="text-center mb-4">Meal Information</h2>
+        <div>
+          <div class="form-group">
+            <label for="foodType">Food Type:</label>
+            <select class="form-control" id="foodType">
+              <option value="0">Vegetarian</option>
+              <option value="1">Non-Vegetarian</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mealType">Meal Type:</label>
+            <select class="form-control" id="mealType">
+              <option value="Breakfast">Breakfast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calorieRange">Calorie Range:</label>
+            <select id="calorieRange" class="form-control">
+              <option value="1.0-58.8">1.0 - 58.8</option>
+              <option value="58.8-116.6">58.8 - 116.6</option>
+              <option value="116.6-174.4">116.6 - 174.4</option>
+              <option value="174.4-232.2">174.4 - 232.2</option>
+              <option value="232.2-290.0">232.2 - 290.0</option>
+              <option value="290.0-347.8">290.0 - 347.8</option>
+              <option value="347.8-405.6">347.8 - 405.6</option>
+              <option value="405.6-463.4">405.6 - 463.4</option>
+              <option value="463.4-521.2">463.4 - 521.2</option>
+              <option value="521.2-579.0">521.2 - 579.0</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block" id="ok">Submit</button>
         </div>
+        <div class="ui">
+          <h4>The Recommended Food items</h4>
+          <ul id="foodList"></ul>
+        </div>
+      </div>
+      <div class="back-top">
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-arrow-up-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+            /></svg
+        ></a>
+      </div>
     </main>
     <footer>
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link px-2 text-body-secondary">About</a></li>
-                <li class="nav-item"><a href="{{ url_for('blog') }}" class="nav-link px-2 text-body-secondary">Blogs</a></li>
-                <li class="nav-item"><a href="{{ url_for('bmi') }}" class="nav-link px-2 text-body-secondary">BMI Calculator</a>
-                </li>
-                <li class="nav-item"><a href="{{ url_for('diet') }}" class="nav-link px-2 text-body-secondary">Diet Recommender</a>
-                </li>
-                <li class="nav-item"><a href="{{ url_for('calorie') }}" class="nav-link px-2 text-body-secondary">Calorie Calculator</a></li>
-                <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link px-2 text-body-secondary">Contact</a></li>
-            </ul>
-            <p class="text-center text-body-secondary">© 2024 made with ❤️ for KARE</p>
-        </footer>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a
+              href="{{ url_for('index') }}"
+              class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('about') }}"
+              class="nav-link px-2 text-body-secondary"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('blog') }}"
+              class="nav-link px-2 text-body-secondary"
+              >Blogs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('bmi') }}"
+              class="nav-link px-2 text-body-secondary"
+              >BMI Calculator</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('diet') }}"
+              class="nav-link px-2 text-body-secondary"
+              >Diet Recommender</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('calorie') }}"
+              class="nav-link px-2 text-body-secondary"
+              >Calorie Calculator</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('contact') }}"
+              class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">
+          © 2024 made with ❤️ for KARE
+        </p>
+      </footer>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="{{ url_for('static', filename='static\js\diet.js') }}"></script> -->
+    <script>
+      document.getElementById("ok").addEventListener("click", function (event) {
+        var foodType = document.getElementById("foodType").value;
+        var calorieRange = document.getElementById("calorieRange").value;
+        var mealType = document.getElementById("mealType").value;
+        if (foodType === "" || mealType === "" || calorieRange === "") {
+          alert("Please enter all the details");
+        } else {
+          var data = [
+            {
+              Food_items: "Asparagus Cooked",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 22,
+            },
+            {
+              Food_items: "Avocados",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 160,
+            },
+            {
+              Food_items: "Bananas",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 89,
+            },
+            {
+              Food_items: "Bagels made in wheat",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 250,
+            },
+            {
+              Food_items: "Berries",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 349,
+            },
+            {
+              Food_items: "Brocolli",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 25,
+            },
+            {
+              Food_items: "Brown Rice",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 362,
+            },
+            {
+              Food_items: "Cauliflower",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 32,
+            },
+            {
+              Food_items: "American cheese",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 331,
+            },
+            {
+              Food_items: "Coffee",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 2,
+            },
+            {
+              Food_items: "Corn",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 97,
+            },
+            {
+              Food_items: "Dark chocolates",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 556,
+            },
+            {
+              Food_items: "Grapes",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 93,
+            },
+            {
+              Food_items: "Milk",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 97,
+            },
+            {
+              Food_items: "Cashew Nuts",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 553,
+            },
+            {
+              Food_items: "Onions",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 40,
+            },
+            {
+              Food_items: "Orange",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 97,
+            },
+            {
+              Food_items: "Pasta canned with tomato sauce",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 71,
+            },
+            {
+              Food_items: "Pears",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 57,
+            },
+            {
+              Food_items: "Peas",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 81,
+            },
+            {
+              Food_items: "Protein Powder",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 411,
+            },
+            {
+              Food_items: "Pumpkin",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 18,
+            },
+            {
+              Food_items: "Tuna Salad",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 187,
+            },
+            {
+              Food_items: "Tuna Fish",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 184,
+            },
+            {
+              Food_items: "Peproni Pizza",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 298,
+            },
+            {
+              Food_items: "Cheese Pizza",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 276,
+            },
+            {
+              Food_items: "French Fries",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 289,
+            },
+            {
+              Food_items: "Chicken Burger",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 292,
+            },
+            {
+              Food_items: "Cheese Burger",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 256,
+            },
+            {
+              Food_items: "Chicken Sandwich",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 257,
+            },
+            {
+              Food_items: "Sugar Doughnuts",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 426,
+            },
+            {
+              Food_items: "Chocolate Doughnuts",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 452,
+            },
+            {
+              Food_items: "Pop Corn - Caramel",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 381,
+            },
+            {
+              Food_items: "Pop Corn",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 429,
+            },
+            {
+              Food_items: "Dosa",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 168,
+            },
+            {
+              Food_items: "Idli",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 156,
+            },
+            {
+              Food_items: "Poha",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 130,
+            },
+            {
+              Food_items: "Chappati",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 297,
+            },
+            {
+              Food_items: "Tomato",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 16,
+            },
+            {
+              Food_items: "Yogurt",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 60,
+            },
+            {
+              Food_items: "Brownie",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 407,
+            },
+            {
+              Food_items: "Noodles",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 108,
+            },
+            {
+              Food_items: "Uttapam",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 188,
+            },
+            {
+              Food_items: "Bhaji Pav",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 151,
+            },
+            {
+              Food_items: "Dal Makhani",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 109,
+            },
+            {
+              Food_items: "Almonds",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 579,
+            },
+            {
+              Food_items: "Mushrooms",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 22,
+            },
+            {
+              Food_items: "Egg Yolk cooked",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "1",
+              Calories: 196,
+            },
+            {
+              Food_items: "Sweet Potatoes cooked",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 76,
+            },
+            {
+              Food_items: "Boiled Potatoes",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 87,
+            },
+            {
+              Food_items: "White Rice",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 360,
+            },
+            {
+              Food_items: "Orange juice",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 45,
+            },
+            {
+              Food_items: "Greek yogurt plain",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 73,
+            },
+            {
+              Food_items: "Oat Bran Cooked",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 40,
+            },
+            {
+              Food_items: "Green Tea",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 1,
+            },
+            {
+              Food_items: "Chia seeds",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 486,
+            },
+            {
+              Food_items: "Cottage cheese with vegetables",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 95,
+            },
+            {
+              Food_items: "Salmon",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 127,
+            },
+            {
+              Food_items: "Cereals-Corn Flakes",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 384,
+            },
+            {
+              Food_items: "Beans",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 31,
+            },
+            {
+              Food_items: "Lentils",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 101,
+            },
+            {
+              Food_items: "Pasta with corn homemade",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 126,
+            },
+            {
+              Food_items: "Tea",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 1,
+            },
+            {
+              Food_items: "Apples",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 52,
+            },
+            {
+              Food_items: "Strawberries",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 32,
+            },
+            {
+              Food_items: "Quninoa",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 120,
+            },
+            {
+              Food_items: "Goat meat",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 109,
+            },
+            {
+              Food_items: "Rabbit meat",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 114,
+            },
+            {
+              Food_items: "Chicken Strips",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 295,
+            },
+            {
+              Food_items: "Steak Fries",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 255,
+            },
+            {
+              Food_items: "Mexican Rice",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 195,
+            },
+            {
+              Food_items: "Fried Shrimp",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 319,
+            },
+            {
+              Food_items: "Spaghetti and meatballs",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 170,
+            },
+            {
+              Food_items: "Macroni n Cheese ",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 194,
+            },
+            {
+              Food_items: "Pork cooked",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 297,
+            },
+            {
+              Food_items: "Bacon cooked",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 146,
+            },
+            {
+              Food_items: "Nachos",
+              Breakfast: 1,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 350,
+            },
+            {
+              Food_items: "Chicken Popcorn",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 351,
+            },
+            {
+              Food_items: "Turkey cooked",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 203,
+            },
+            {
+              Food_items: "Oyster cooked",
+              Breakfast: 0,
+              Lunch: 1,
+              Dinner: 1,
+              VegNovVeg: "1",
+              Calories: 159,
+            },
+            {
+              Food_items: "Beef sticks",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "1",
+              Calories: 550,
+            },
+            {
+              Food_items: "Banana Chips",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 519,
+            },
+            {
+              Food_items: "Honey",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 304,
+            },
+            {
+              Food_items: "Chocolate Icecream",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 216,
+            },
+            {
+              Food_items: "Vanilla Ice cream",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 207,
+            },
+            {
+              Food_items: "Strawberry Icecream",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 192,
+            },
+            {
+              Food_items: "Marshmallows",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 318,
+            },
+            {
+              Food_items: "Chocolate milk",
+              Breakfast: 1,
+              Lunch: 0,
+              Dinner: 0,
+              VegNovVeg: "0",
+              Calories: 535,
+            },
+            {
+              Food_items: "Rice Pudding",
+              Breakfast: 0,
+              Lunch: 0,
+              Dinner: 1,
+              VegNovVeg: "0",
+              Calories: 376,
+            },
+          ];
+          var u = [];
+          var calorieLimits = calorieRange.split("-");
+          var minCalorie = parseFloat(calorieLimits[0]);
+          var maxCalorie = parseFloat(calorieLimits[1]);
+          for (var i = 0; i < data.length; i++) {
+            if (
+              data[i].VegNovVeg === foodType &&
+              data[i][mealType] === 1 &&
+              data[i].Calories >= minCalorie &&
+              data[i].Calories <= maxCalorie
+            ) {
+              u.push(data[i].Food_items);
+            }
+          }
+          var foodList = document.getElementById("foodList");
+          foodList.innerHTML = "";
+          u.forEach((item) => {
+            var li = document.createElement("li");
+            li.textContent = item;
+            foodList.appendChild(li);
+          });
+          if (u.length === 0) {
+            var li = document.createElement("li");
+            li.textContent = "There are no food items available";
+            foodList.appendChild(li);
+          }
+        }
+      });
+    </script>
+  </body>
 </html>
